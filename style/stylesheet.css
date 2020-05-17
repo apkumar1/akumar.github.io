@@ -1,6 +1,6 @@
 /* stylesheet.css */
 body {
-  background-color: peachpuff;
+  background-color: bisque;
   text-align: center;
 }
 h1 {
@@ -8,7 +8,8 @@ h1 {
   padding: 5px;
   border: 3px solid tomato;
   border-radius: 5px;
-  font-family: "Courier New";
+  font-family: "Times New Roman";
+  font-variant: small-caps
 }
 h2 {
  margin: 4px;

@@ -19,6 +19,24 @@ h2 {
  text-decoration: underline;
 
 }
+
+h3 {
+ margin: 4px;
+ padding: 5px;
+ font-family: "Lucida Console";
+}
+
+border{
+  border: 1px solid tomato;
+  border-radius: 5px;
+}
+ 
+
+likert {
+  float: left;
+  list-style-type: none;
+}
+
 div {
  text-align: center;
 }

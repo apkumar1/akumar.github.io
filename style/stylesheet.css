@@ -1,6 +1,7 @@
 /* stylesheet.css */
 body {
   background-color: powderblue;
+  text-align: center;
 }
 h1 {
  color: blue;
@@ -28,7 +29,6 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  background-color: white;
   text-align: center;
 }

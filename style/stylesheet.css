@@ -1,7 +1,6 @@
 /* stylesheet.css */
 body {
- background-color: lightblue;
- color: #FFFFFF;
+  background-color: lightblue;
 }
 h1 {
  color: #FFFF33;
@@ -10,8 +9,8 @@ h1 {
  font: italic 200%;
 }
 p {
- background-color: #FFFF33;
- color: #333300;
- text-align: right;
+ background-color: lightblue;
+ color: black;
+ text-align: center;
  border: 3px groove #FFFF33;
 }

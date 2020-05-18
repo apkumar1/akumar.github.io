@@ -1,6 +1,6 @@
 /* stylesheet.css */
 body {
-  background-color: ivory;
+  background-color: white;
   text-align: center;
 }
 h1 {
@@ -39,12 +39,6 @@ likert {
 
 div {
  text-align: center;
-}
-
-Form {
-  border: 1px solid lemonchiffon;
-  border-radius: 5px;
-  background-color: lemonchiffon;
 }
 
 footer {

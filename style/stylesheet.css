@@ -39,3 +39,9 @@ footer {
   padding: 3px;
   background-color: darksalmon;
 }
+
+#italic {
+    font-style: italic;
+    font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+    position: fixed;
+}

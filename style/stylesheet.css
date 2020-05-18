@@ -28,6 +28,11 @@ h3 {
 
 div {
  text-align: center;
+ font-family: "Lucida Console";
+}
+
+p {
+ font-family: "Lucida Console";
 }
 
 footer {

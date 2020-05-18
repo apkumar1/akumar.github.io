@@ -2,8 +2,6 @@
 body {
   background-color: white;
   text-align: center;
-  background-image: url('../3.jpg');
-  backdrop-filter: blur(3px);"
 }
 h1 {
   margin: 10px;

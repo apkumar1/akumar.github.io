@@ -7,24 +7,28 @@ var products = [
 		name: "broccoli",
 		vegetarian: true,
 		glutenFree: true,
+		organic: true,
 		price: 1.99
 	},
 	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
+		organic: false,
 		price: 2.35
 	},
 	{
 		name: "salmon",
 		vegetarian: false,
 		glutenFree: true,
+		organic: false,
 		price: 10.00
 	},
 	{
 		name: "bagel",
 		vegetarian: true,
 		glutenFree: false,
+		organic: false,
 		price: 1.80
 	},
 	{
@@ -37,42 +41,49 @@ var products = [
 		name: "tomato",
 		vegetarian: true,
 		glutenFree: true,
+		organic: false,
 		price: 0.80
 	},
 	{
 		name: "lettuce",
 		vegetarian: true,
 		glutenFree: true,
+		organic: false,
 		price: 1.99
 	},
 	{
 		name: "croissant",
 		vegetarian: true,
 		glutenFree: false,
+		organic: false,
 		price: 0.99
 	},
 	{
 		name: "eggs",
 		vegetarian: false,
 		glutenFree: true,
+		organic: true,
 		price: 2.35
 	},
 	{
 		name: "milk",
 		vegetarian: true,
 		glutenFree: true,
+		organic: true,
 		price: 2.35
 	},
 	{
 		name: "chicken pasta",
 		vegetarian: false,
 		glutenFree: false,
+		organic: false,
 		price: 10.99
 	},
 	{
 		name: "cake",
 		vegetarian: false,
 		glutenFree: false,
+		organic: false,
 		price: 5.99
 	}
 ];

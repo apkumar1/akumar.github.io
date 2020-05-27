@@ -59,7 +59,10 @@ function populateListProductChoices(slct1, slct2) {
 		
 		//add price to product
 		var price = products[i].price;
-		s2.appendChild(price);
+		var price2 = price.toString();
+		var pricedisp = document.createElement("p");
+		pricedisp.value = price2;
+		s2.appendChild(pricedisp);
 		
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    

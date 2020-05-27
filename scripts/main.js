@@ -54,14 +54,18 @@ function populateListProductChoices(slct1, slct2) {
 		s2.appendChild(checkbox);
 		
 		// create a label for the checkbox, and also add in HTML DOM
-		var price = priceArray[i];
-		var price2 = price.toString();
-		
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
 		s2.appendChild(label);
 		
+		// create a breakline node and add in HTML DOM
+		s2.appendChild(document.createElement("br"));    
+		
+		//price added
+		var price = priceArray[i];
+		var price2 = price.toString();
+		//new label for price
 		var label2 = document.createElement('label')
 		label2.htmlFor = price;
 		label2.appendChild(document.createTextNode(price));

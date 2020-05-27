@@ -8,9 +8,9 @@
 </head>
 <body>
   <div style="background-image: url('../images/3.jpg'); backdrop-filter: blur(3px);">
-  <title>Grocery Store</title>
+  <title>Ottawa Grocery Store</title>
   
-  <h1>Grocery Store</h1><br>
+  <h1>Ottawa Grocery Store</h1><br>
 
   <!-- Tab links, each one with an onclick event associated with it -->
   <div class="tab">
@@ -18,6 +18,38 @@
     <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
     <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
   </div><br>
+    
+  <!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+	Choose a Category:
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="Vegetarian">Vegetarian</option>
+    <option value="GlutenFree">GlutenFree</option>
+    <option value="None">None</option>
+	</select>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
   
   <a href="https://www.reddit.com/"><img style="width:70%;height:70%;border:3px solid darksalmon;" src="../images/1.JPG"></a><br>
   <a href="https://www.reddit.com/"><img style="width:70%;height:70%;border:3px solid darksalmon;" src="../images/2.JPG"></a><br>

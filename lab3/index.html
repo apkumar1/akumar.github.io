@@ -21,25 +21,25 @@
   <!-- Tab content -->
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-	Choose a Category:
+  <p>What would you like to shop for?</p>
+	Choose a diet category: (optional)
 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">Gluten Free</option>
-		<option value="Organic">Organic</option>
-		<option value="Vegetarian/GlutenFree">Vegetarian & Gluten Free</option>
-		<option value="Vegetarian/Organic">Vegetarian & Organic </option>
-		<option value="GlutenFree/Organic">Gluten Free & Organic</option>
-		<option value="Vegetarian/GlutenFree/Organic">Vegetarian & Gluten Free & Organic</option>
-    <option value="None">None</option>
+		<option value="Vegetarian">Vegetarian items only</option>
+    		<option value="GlutenFree">Gluten Free items only</option>
+		<option value="Organic">Organic items only</option>
+		<option value="Vegetarian/GlutenFree">Vegetarian & Gluten Free only</option>
+		<option value="Vegetarian/Organic">Vegetarian & Organic only</option>
+		<option value="GlutenFree/Organic">Gluten Free & Organic only</option>
+		<option value="Vegetarian/GlutenFree/Organic">Vegetarian & Gluten Free & Organic only</option>
+    		<option value="None">No specific diet category</option>
 	</select><br><br><br><br><br><br><br>
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
   <p>We preselected products based on your restrictions.</p>
-	 Choose items to buy:
+	 Choose items that you would like to purchase:
 	 <div id="displayProduct"></div>
 	
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
@@ -49,7 +49,7 @@
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
-  <p>Here is your cart.</p>
+  <p>Here is your cart:</p>
   <div id="displayCart"></div><br><br><br><br><br><br><br><br><br>
 </div>
 

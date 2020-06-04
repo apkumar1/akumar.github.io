@@ -60,7 +60,14 @@ function populateListProductChoices(slct1, slct2) {
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));  
+		s2.appendChild(document.createElement("br"));
+		
+		var img = document.createElement("img");
+		var img.src = "../lab3/images/"+String(productName)+".JPG";
+		s2.appendChild(img);
+		
+		// create a breakline node and add in HTML DOM
+		s2.appendChild(document.createElement("br"));
 		
 		//price added
 		var price = priceArray[i];

@@ -111,41 +111,217 @@ function restrictListProducts(prods, restriction) {
 	});
 	let product_names = [];
 	let product_prices = [];
+	let product_veg = [];
+	let product_meat = [];
+	let product_dairy = [];
+	let product_meal = [];
+	let product_dessert = [];
+	let product_fruit = [];
+	let product_grain = [];
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 			product_prices.push(prods[i].price);
+			if(prods[i].type== "veg"){
+				product_veg.push(prods[i].name);
+			}
+			if(prods[i].type== "meat"){
+				product_meat.push(prods[i].name);
+			}
+			if(prods[i].type== "dairy"){
+				product_dairy.push(prods[i].name);
+			}
+			if(prods[i].type== "meal"){
+				product_meal.push(prods[i].name);
+			}
+			if(prods[i].type== "dessert"){
+				product_dessert.push(prods[i].name);
+			}
+			if(prods[i].type== "fruit"){
+				product_fruit.push(prods[i].name);
+			}
+			if(prods[i].type== "grain"){
+				product_grain.push(prods[i].name);
+			}
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
 			product_names.push(prods[i].name);
 			product_prices.push(prods[i].price);
+			if(prods[i].type== "veg"){
+				product_veg.push(prods[i].name);
+			}
+			if(prods[i].type== "meat"){
+				product_meat.push(prods[i].name);
+			}
+			if(prods[i].type== "dairy"){
+				product_dairy.push(prods[i].name);
+			}
+			if(prods[i].type== "meal"){
+				product_meal.push(prods[i].name);
+			}
+			if(prods[i].type== "dessert"){
+				product_dessert.push(prods[i].name);
+			}
+			if(prods[i].type== "fruit"){
+				product_fruit.push(prods[i].name);
+			}
+			if(prods[i].type== "grain"){
+				product_grain.push(prods[i].name);
+			}
+			
 		}
 		else if (restriction == "None"){
 			product_names.push(prods[i].name);
 			product_prices.push(prods[i].price);
+			if(prods[i].type== "veg"){
+				product_veg.push(prods[i].name);
+			}
+			if(prods[i].type== "meat"){
+				product_meat.push(prods[i].name);
+			}
+			if(prods[i].type== "dairy"){
+				product_dairy.push(prods[i].name);
+			}
+			if(prods[i].type== "meal"){
+				product_meal.push(prods[i].name);
+			}
+			if(prods[i].type== "dessert"){
+				product_dessert.push(prods[i].name);
+			}
+			if(prods[i].type== "fruit"){
+				product_fruit.push(prods[i].name);
+			}
+			if(prods[i].type== "grain"){
+				product_grain.push(prods[i].name);
+			}
 		}
 		else if ((restriction == "Organic")&&(prods[i].organic == true)){
 			product_names.push(prods[i].name);
 			product_prices.push(prods[i].price);
+			if(prods[i].type== "veg"){
+				product_veg.push(prods[i].name);
+			}
+			if(prods[i].type== "meat"){
+				product_meat.push(prods[i].name);
+			}
+			if(prods[i].type== "dairy"){
+				product_dairy.push(prods[i].name);
+			}
+			if(prods[i].type== "meal"){
+				product_meal.push(prods[i].name);
+			}
+			if(prods[i].type== "dessert"){
+				product_dessert.push(prods[i].name);
+			}
+			if(prods[i].type== "fruit"){
+				product_fruit.push(prods[i].name);
+			}
+			if(prods[i].type== "grain"){
+				product_grain.push(prods[i].name);
+			}
 		}
 		else if ((restriction == "Vegetarian/GlutenFree") && (prods[i].glutenFree == true) && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 			product_prices.push(prods[i].price);
+			if(prods[i].type== "veg"){
+				product_veg.push(prods[i].name);
+			}
+			if(prods[i].type== "meat"){
+				product_meat.push(prods[i].name);
+			}
+			if(prods[i].type== "dairy"){
+				product_dairy.push(prods[i].name);
+			}
+			if(prods[i].type== "meal"){
+				product_meal.push(prods[i].name);
+			}
+			if(prods[i].type== "dessert"){
+				product_dessert.push(prods[i].name);
+			}
+			if(prods[i].type== "fruit"){
+				product_fruit.push(prods[i].name);
+			}
+			if(prods[i].type== "grain"){
+				product_grain.push(prods[i].name);
+			}
 		}
 		else if ((restriction == "Vegetarian/GlutenFree/Organic") && (prods[i].organic == true) && (prods[i].glutenFree == true) && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 			product_prices.push(prods[i].price);
+			if(prods[i].type== "veg"){
+				product_veg.push(prods[i].name);
+			}
+			if(prods[i].type== "meat"){
+				product_meat.push(prods[i].name);
+			}
+			if(prods[i].type== "dairy"){
+				product_dairy.push(prods[i].name);
+			}
+			if(prods[i].type== "meal"){
+				product_meal.push(prods[i].name);
+			}
+			if(prods[i].type== "dessert"){
+				product_dessert.push(prods[i].name);
+			}
+			if(prods[i].type== "fruit"){
+				product_fruit.push(prods[i].name);
+			}
+			if(prods[i].type== "grain"){
+				product_grain.push(prods[i].name);
+			}
 		}
 		else if ((restriction == "Vegetarian/Organic") && (prods[i].organic == true) && (prods[i].vegetarian == true)){
 			product_names.push(prods[i].name);
 			product_prices.push(prods[i].price);
+			if(prods[i].type== "veg"){
+				product_veg.push(prods[i].name);
+			}
+			if(prods[i].type== "meat"){
+				product_meat.push(prods[i].name);
+			}
+			if(prods[i].type== "dairy"){
+				product_dairy.push(prods[i].name);
+			}
+			if(prods[i].type== "meal"){
+				product_meal.push(prods[i].name);
+			}
+			if(prods[i].type== "dessert"){
+				product_dessert.push(prods[i].name);
+			}
+			if(prods[i].type== "fruit"){
+				product_fruit.push(prods[i].name);
+			}
+			if(prods[i].type== "grain"){
+				product_grain.push(prods[i].name);
+			}
 		}
 		else if ((restriction == "GlutenFree/Organic") && (prods[i].glutenFree == true) && (prods[i].organic == true)){
 			product_names.push(prods[i].name);
 			product_prices.push(prods[i].price);
+			if(prods[i].type== "veg"){
+				product_veg.push(prods[i].name);
+			}
+			if(prods[i].type== "meat"){
+				product_meat.push(prods[i].name);
+			}
+			if(prods[i].type== "dairy"){
+				product_dairy.push(prods[i].name);
+			}
+			if(prods[i].type== "meal"){
+				product_meal.push(prods[i].name);
+			}
+			if(prods[i].type== "dessert"){
+				product_dessert.push(prods[i].name);
+			}
+			if(prods[i].type== "fruit"){
+				product_fruit.push(prods[i].name);
+			}
+			if(prods[i].type== "grain"){
+				product_grain.push(prods[i].name);
+			}
 		}
 	}
-	return [product_names, product_prices] ;
+	return [product_names, product_prices, product_veg, product_meat, product_dairy, product_meal, product_dessert, product_fruit, product_grain] ;
 }
 
 // Calculate the total price of items, with received parameter being a list of products

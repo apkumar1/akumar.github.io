@@ -117,6 +117,10 @@ function populateListProductChoices(slct1, slct2) {
 	s2.appendChild(btn7);
 	// create a breakline node and add in HTML DOM
 	s2.appendChild(document.createElement("br"));
+	// create a breakline node and add in HTML DOM
+	s2.appendChild(document.createElement("br"));
+	// create a breakline node and add in HTML DOM
+	s2.appendChild(document.createElement("br"));
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">

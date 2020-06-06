@@ -38,6 +38,20 @@ function populateListProductChoices(slct1, slct2) {
     var optionArray1 = restrictListProducts(products, s1.value);
 	var optionArray = optionArray1[0];
 	var priceArray = optionArray1[1];
+	var veg = optionArray1[2];
+	var meat = optionArray1[3];
+	var dairy = optionArray1[4];
+	var meal = optionArray1[5];
+	var dessert = optionArray1[6];
+	var fruit = optionArray1[7];
+	var grain = optionArray1[8];
+	
+	// create a label for the checkbox, and also add in HTML DOM
+		var label = document.createElement('label')
+		var txt1 = "Would you like to view our inventory first? Click on a food group below:";
+		label.appendChild(document.createTextNode(txt1));
+		s2.appendChild(label);
+	
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">

@@ -8,83 +8,95 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 1.99
+		price: 1.99,
+		type: "veg"
 	},
 	{
 		name: "bread",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 2.35
+		price: 2.35,
+		type: "grain"
 	},
 	{
 		name: "salmon",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 10.00
+		price: 10.00,
+		type: "meat"
 	},
 	{
 		name: "bagel",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 1.80
+		price: 1.80,
+		type: "grain"
 	},
 	{
 		name: "chicken",
 		vegetarian: false,
 		glutenFree: true,
-		price: 5.80
+		price: 5.80,
+		type: "meat"
 	},
 	{
 		name: "tomato",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 0.80
+		price: 0.80,
+		type: "veg"
 	},
 	{
 		name: "lettuce",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 1.99
+		price: 1.99,
+		type: "veg"
 	},
 	{
 		name: "croissant",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 0.99
+		price: 0.99,
+		type: "grain"
 	},
 	{
 		name: "eggs",
 		vegetarian: false,
 		glutenFree: true,
 		organic: true,
-		price: 2.35
+		price: 2.35,
+		type: "meat"
 	},
 	{
 		name: "milk",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 2.35
+		price: 2.35,
+		type: "dairy"
 	},
 	{
 		name: "chicken pasta",
 		vegetarian: false,
 		glutenFree: false,
 		organic: false,
-		price: 10.99
+		price: 10.99,
+		type: "meal"
 	},
 	{
 		name: "cake",
 		vegetarian: false,
 		glutenFree: false,
 		organic: false,
-		price: 5.99
+		price: 5.99,
+		type: "dessert"
 	}
 ];
 	

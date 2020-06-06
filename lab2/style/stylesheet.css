@@ -27,7 +27,7 @@
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #ff6666;
    text-align: center;
 }
 

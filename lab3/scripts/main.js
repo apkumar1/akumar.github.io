@@ -46,6 +46,12 @@ function populateListProductChoices(slct1, slct2) {
 	var fruit = optionArray1[7];
 	var grain = optionArray1[8];
 	
+		// create a breakline node and add in HTML DOM
+	s2.appendChild(document.createElement("br"));
+	
+		// create a breakline node and add in HTML DOM
+	s2.appendChild(document.createElement("br"));
+	
 	// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		var txt1 = "Based on your choices, here is what we have:";
@@ -57,8 +63,11 @@ function populateListProductChoices(slct1, slct2) {
 	
 	//create button
 	var btn = document.createElement("label");
+	btn.appendChild(document.createTextNode("VEGETABLES: "));
 	for (a = 0; a<veg.length; a++){
+		
 		btn.appendChild(document.createTextNode(veg[a]));
+		btn.appendChild(document.createTextNode(", "));
 	}
 	s2.appendChild(btn);
 	// create a breakline node and add in HTML DOM
@@ -66,8 +75,10 @@ function populateListProductChoices(slct1, slct2) {
 	
 	//create button
 	var btn2 = document.createElement("label");
+	btn2.appendChild(document.createTextNode("MEAT: "));
 	for (a = 0; a<meat.length; a++){
 		btn2.appendChild(document.createTextNode(meat[a]));
+		btn2.appendChild(document.createTextNode(", "));
 	}
 	s2.appendChild(btn2);
 	// create a breakline node and add in HTML DOM
@@ -75,8 +86,10 @@ function populateListProductChoices(slct1, slct2) {
 	
 	//create button
 	var btn3 = document.createElement("label");
+	btn3.appendChild(document.createTextNode("DAIRY: "));
 	for (a = 0; a<dairy.length; a++){
 		btn3.appendChild(document.createTextNode(dairy[a]));
+		btn3.appendChild(document.createTextNode(", "));
 	}
 	s2.appendChild(btn3);
 	// create a breakline node and add in HTML DOM
@@ -84,8 +97,10 @@ function populateListProductChoices(slct1, slct2) {
 	
 	//create button
 	var btn4 = document.createElement("label");
+	btn4.appendChild(document.createTextNode("COOKED MEALS: "));
 	for (a = 0; a<meal.length; a++){
 		btn4.appendChild(document.createTextNode(meal[a]));
+		btn4.appendChild(document.createTextNode(", "));
 	}
 	s2.appendChild(btn4);
 	// create a breakline node and add in HTML DOM
@@ -93,8 +108,10 @@ function populateListProductChoices(slct1, slct2) {
 	
 	//create button
 	var btn5 = document.createElement("label");
+	btn5.appendChild(document.createTextNode("DESSERT: "));
 	for (a = 0; a<dessert.length; a++){
 		btn5.appendChild(document.createTextNode(dessert[a]));
+		btn5.appendChild(document.createTextNode(", "));
 	}
 	s2.appendChild(btn5);
 	// create a breakline node and add in HTML DOM
@@ -102,8 +119,10 @@ function populateListProductChoices(slct1, slct2) {
 	
 	//create button
 	var btn6 = document.createElement("label");
+	btn6.appendChild(document.createTextNode("FRUITS: "));
 	for (a = 0; a<fruit.length; a++){
 		btn6.appendChild(document.createTextNode(fruit[a]));
+		btn6.appendChild(document.createTextNode(", "));
 	}
 	s2.appendChild(btn6);
 	// create a breakline node and add in HTML DOM
@@ -111,16 +130,17 @@ function populateListProductChoices(slct1, slct2) {
 	
 	//create button
 	var btn7 = document.createElement("label");
+	btn7.appendChild(document.createTextNode("GRAINS: "));
 	for (a = 0; a<grain.length; a++){
 		btn7.appendChild(document.createTextNode(grain[a]));
+		btn7.appendChild(document.createTextNode(", "));
 	}
 	s2.appendChild(btn7);
 	// create a breakline node and add in HTML DOM
 	s2.appendChild(document.createElement("br"));
 	// create a breakline node and add in HTML DOM
 	s2.appendChild(document.createElement("br"));
-	// create a breakline node and add in HTML DOM
-	s2.appendChild(document.createElement("br"));
+
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">

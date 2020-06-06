@@ -62,8 +62,9 @@ function populateListProductChoices(slct1, slct2) {
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));
 		
-		var name = productName.toString();
-		var str = "/images/"+String(name)+".JPG";
+		var name1 = optionArray[i];
+		var name = name1.toString();
+		var str = "../lab3/scripts/images/"+String(name)+".JPG";
 		var str2 = String(str);
 		var x = document.createElement("IMG");
 		  x.setAttribute("src", str2);

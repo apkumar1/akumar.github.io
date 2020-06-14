@@ -138,7 +138,6 @@
                 </div>
                 <div id="collapseDate" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>What date?</p>
                         <!-- Bootstrap has various input components. Some examples are given here: -->
                         <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
                         <div class="form-group row">
@@ -152,12 +151,24 @@
             </div>
             <div class="card">
                 <div class="card-header">
-                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your information</a>
                 </div>
                 <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
                     <div class="card-body">
-                        <p>Your information so we can contact you</p>
-                        <p>Form to enter name, email, phone</p>
+                        <p>Please enter the following so we can book your appointment!</p>
+                        
+                        <label for="exampleFormControlTextarea1">Your full name</label>
+                        <input class="form-control" type="text" placeholder="Full Name">
+                        
+                        <label for="exampleFormControlTextarea1">Your phone number</label>
+                        <input class="form-control" type="text" placeholder="Phone Number">
+                        
+                        <label for="exampleFormControlTextarea1">Your email</label>
+                        <input class="form-control" type="text" placeholder="Email">
+                        
+                        <label for="exampleFormControlTextarea1">Additional Comments</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        
                     </div>
                 </div>
             </div>

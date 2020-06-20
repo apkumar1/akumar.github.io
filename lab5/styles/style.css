@@ -4,6 +4,10 @@
 */
 
 /* Bootstrap default font-family is Helvetica Neue */
+h1 {
+   font-size:2em;margin:.67em 0
+}
+
 .myfooter {
   position: fixed;
   left: 0;

@@ -79,16 +79,14 @@ alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
     <div class="container">
         <div class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>COVID-19 UPDATES </strong>More Information.
+            <strong>COVID-19 UPDATES</strong>More Information.
         </div>
     </div>
 <br>
     <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
     <!-- Might be (or not) useful to show some information to the user -->
     <div class="container" id="first">
-        <div class="tooltip">
-        <h3 style="text-decoration: underline;" >Our Services <span class="tooltiptext">Here are all the services we provide.</span></h3> 
-        </div>
+        <h3 style="text-decoration: underline;">Our Services</h3> 
             <table class="table table-hover">
             <thead>
             <tr>
@@ -127,9 +125,7 @@ alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
     <!-- The first card's button doesn't go anywhere, it could be a modal --> 
     <!-- My second card limits the information seen and uses collapsible to show more -->
     <div class="container p-3" id="second">
-        <div class="tooltip">
-        <h3 style="text-decoration: underline;">Meet our stylists <span class="tooltiptext">See all the stylists we have and what they specialize in.</span></h3>
-        </div>
+        <h3 style="text-decoration: underline;">Meet our stylists</h3>
             <div class="card-columns">
             <div class="card" style="width:200px">
                 <img class="card-img-top" src="images/person1.jpg" alt="Card image" style="width:100%">
@@ -165,9 +161,7 @@ alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
     <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
     <!-- could work well.  You can use other patterns too.  This is just an example. -->
     <div class="container" id="third">
-        <div class="tooltip">
-        <h3 style="text-decoration: underline;"> Book an Appointment TODAY! <span class="tooltiptext">Here you will enter important info to book a spot.</span></h3>
-        </div>
+        <h3 style="text-decoration: underline;"> Book an Appointment TODAY! </h3>
             <div id="accordion">
             <div class="card">
                 <div class="card-header">
@@ -225,19 +219,18 @@ alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
                         <input class="form-control" type="text" placeholder="Full Name">
                         
                         <div class="tooltip">
-                        <label for="exampleFormControlTextarea2" >Your phone number <span class="tooltiptext">Please enter valid numbers.</span></label>
+                        <label for="exampleFormControlTextarea2" >Your phone number </label>
                         <div>
                             <input class="form-control" type="number" maxlength="10" placeholder="xxx xxx xxxx">
                         
                         <div class="tooltip">
-                            <label for="exampleFormControlTextarea3">Your email <span class="tooltiptext">Your email so we can send you paperless receipts.</span></label>
+                            <label for="exampleFormControlTextarea3">Your email </label>
                             </div>
                             <input class="form-control" type="text" placeholder="xxx@xxx.com">
                         
-                            <div class="tooltip">
-                        <label for="exampleFormControlTextarea4" >Your credit card number <span class="tooltiptext">Enter valid numbers. Your credit card info helps us confirm your spot.</span></label>
-                            </div>
-                                <input class="form-control" type="number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx">
+                        <label for="exampleFormControlTextarea4" >Your credit card number </label>
+                            
+                        <input class="form-control" type="number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx">
                         <label for="exampleFormControlTextarea4">Your credit card 3 digit code</label>
                         <input class="form-control" type="number" maxlength="3" placeholder="xxx">
                         <label for="exampleFormControlTextarea4">Your credit card expiry</label>

@@ -29,6 +29,34 @@
 
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    
+    <style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
 </head>
 
 <body>
@@ -229,7 +257,9 @@ alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
                             <input class="form-control" type="text" placeholder="xxx@xxx.com">
                         
                         <label for="exampleFormControlTextarea4" >Your credit card number </label>
-                            
+                            <div class="tooltip">Why do we ask for credit card info? Hover to find out.
+                            <span class="tooltiptext">This info helps us confirm your spot in line, to give us security over your payment, and also quickly provide refunds if needed. </span>
+                            </div>
                         <input class="form-control" type="number" maxlength="16" placeholder="xxxx xxxx xxxx xxxx">
                         <label for="exampleFormControlTextarea4">Your credit card 3 digit code</label>
                         <input class="form-control" type="number" maxlength="3" placeholder="xxx">

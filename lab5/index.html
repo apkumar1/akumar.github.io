@@ -227,7 +227,7 @@ alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
                         <div class="form-group row">
                             <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
                             <div class="col-10">
-                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                                <input name="cal" class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
                             </div>
                         </div>
                     </div>
@@ -309,7 +309,22 @@ alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
 <br><br><br><br><br><br>
 <footer class="myfooter">
   ~Site created by A.K.~
-</footer>
+        </footer>
 
 </body>
 </html>
+    
+    <script> 
+        var person = null;
+$("input[name='person']").click(function() {
+    person = this.value;
+
+    if (person == "marc") {
+        $( "#cal" ).datepicker( { minDate: new Date('2020-6-10'), maxDate: new Date('2020-6-30') });
+        
+    } else {
+        $( "#cal" ).datepicker( { minDate: new Date('2020-6-15'), maxDate: new Date('2020-7-30') });
+        
+    }
+});
+    </script>
